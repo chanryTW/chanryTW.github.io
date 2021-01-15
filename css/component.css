@@ -350,6 +350,10 @@
 .about{
     padding-top: 120px;
 }
+.about__context > p a{
+    color: #E98074;
+    text-decoration: underline;
+}
 .about__context span{
     font-size: 18px;
 }
