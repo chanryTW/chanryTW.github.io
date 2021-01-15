@@ -504,6 +504,19 @@
 .experience .container{
     padding-top: 100px;
 }
+    /* 照片 */
+.experience .imgBox{
+    width: 100%;
+    margin-top: 15px;
+}
+.experience .imgBox>img{
+    object-fit: cover;
+    width: 165px;
+    height: 112px;
+    border: #FFF solid 4px;
+    border-radius: 18px;
+}
+    /* 背景圖案 */
 .experience .item-wrappe{
     position: absolute;
     top: 0;
@@ -588,10 +601,10 @@
 }
 .timeline-block-left {
     float: left;
-    direction: rtl
+    direction: rtl;
 }
 .timeline-block-left p {
-    text-align: left;
+    direction: ltr;
 }
 .marker {
     width: 16px;
