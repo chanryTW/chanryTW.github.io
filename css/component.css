@@ -530,37 +530,59 @@
     transform: translate(-50%);
 }
 .experience .item-wrapper svg:nth-child(1){
-    width: 44px;
-    top: -234px;
+    width: 27px;
+    top: -757px;
     left: 39%;
-    fill: #484848;
-    opacity: 0.5;
+    fill: #E98074;
+    opacity: 0.6;
 }
 .experience .item-wrapper svg:nth-child(2){
     width: 640px;
-    top: -812px;
+    top: -1612px;
     left: 60%;
     fill: #484848;
     opacity: 0.05;
 }
 .experience .item-wrapper svg:nth-child(3){
     width: 223px;
-    top: -821px;
+    top: -1621px;
     left: 61%;
     fill: #484848;
     opacity: 0.7;
 }
 .experience .item-wrapper svg:nth-child(4){
     width: 446px;
-    top: -692px;
+    top: -592px;
     left: 41%;
     fill: #484848;
-    opacity: 0.03;
+    opacity: 0.1;
 }
 .experience .item-wrapper svg:nth-child(5){
     width: 175px;
-    top: -480px;
+    top: -1012px;
     left: 39%;
+    fill: #E98074;
+    opacity: 0.5;
+}
+.experience .item-wrapper svg:nth-child(6){
+    width: 859px;
+    top: -1913px;
+    left: 38%;
+    fill: #484848;
+    opacity: 0.05;
+}
+.experience .item-wrapper svg:nth-child(7){
+    width: 213px;
+    top: -1653px;
+    left: 37%;
+    fill: #E98074;
+    opacity: 0.4;
+    transform: rotate(86deg);
+}
+.experience .item-wrapper svg:nth-child(8){
+    width: 41px;
+    top: -300px;
+    left: 62%;
     fill: #E98074;
     opacity: 0.5;
 }
