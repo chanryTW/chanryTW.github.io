@@ -1,0 +1,171 @@
+/*
+ * 字型、字體、reset 等設定
+ */
+/*-------------------------*/
+/* $Catalog 
+---------------------------*/
+/** 
+ * Catalog
+ * Font import
+ * Icons
+ * Reset
+ * Color
+ * Typography
+
+ * Utility
+**/
+
+/*-------------------------*/
+/* $Font import 
+---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+/*-------------------------*/
+/* $Icons 
+---------------------------*/
+@import url('/css/all.min.css');
+
+/* $Reset 
+---------------------------*/
+@import url('/css/base-reset.css');
+/* Add reset */
+*{
+  position: relative;
+  box-sizing: border-box;
+}
+
+/*-------------------------*/
+/* $Color 
+---------------------------*/
+/* background color */
+.bg-color-primary{background-color: #faf1dd;}
+.bg-color-secondary{background-color: #1B3159;}
+.bg-color-tertiary{background-color: #F5E5C0;}
+.bg-color-quaternary{background-color: #484848;}
+.bg-color-quinary{background-color: #E98074;}
+
+/* text color */
+.color-primary{color: #faf1dd;}
+.color-secondary{color: #1B3159;}
+.color-tertiary{color: #F5E5C0;}
+.color-quaternary{color: #484848;}
+.color-quinary{color: #E98074;}
+
+/*-------------------------*/
+/* $Typography 
+---------------------------*/
+/* Globel */
+body,html{
+  font-family: "Noto Sans TC",  "Helvetica", "Roboto", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* heading */
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  color: #484848;
+}
+h1{
+  font-size: 80px;
+  font-weight: 800;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h2{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h3{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h4{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h5{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+h6{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.subtitle{
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Noto Sans TC", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px){
+  .subtitle{
+    font-size: 40px;
+  }
+}
+/* link */
+a{
+  /* color: #484848; */
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:fucus{
+  color: #fefefe;
+  text-decoration: none;
+}
+/* list */
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------*/
+/* $Utility 
+---------------------------*/
+.u-push-right{float: right !important;}
+.u-pull-left{float: left !important;}
+.u-text-center{text-align: center !important;}
+.u-cf::after{
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 768px){
+  .u-xs-hidden{
+    display: none !important;
+  }
+}
