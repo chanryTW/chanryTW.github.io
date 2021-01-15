@@ -63,14 +63,13 @@ $(document).ready(function() {
     // ----------- Contact -----------
     // 送出表單
     $('#submit').on('click', function(e) {
-        e.preventDefault(); // 停止預設動作
-
         // 驗證
         if ($('#contact__mail').val().search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/) != -1 
             && $('#contact__name').val() != null
             && $('#contact__type').val() != null 
             && $('#contact__content').val() != null) {     
             console.log("驗證成功");
+            e.preventDefault(); // 停止預設動作
 
             var contact__name = $('#contact__name').val() || '未填寫';
             var contact__mail = $('#contact__mail').val() || '未填寫';
@@ -104,6 +103,7 @@ $(document).ready(function() {
             });
         } else {
             console.log("驗證失敗");
+            // alert('請確實填寫欄位');
         }
     });   
 })
