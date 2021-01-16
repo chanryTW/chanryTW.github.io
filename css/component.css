@@ -723,6 +723,11 @@
 .timeline-content span {
     font-size: 18px;
 }
+@media (max-width: 1200px){
+    .timeline-content h3 {
+        font-size: 22px;
+    }
+}
 @media (max-width: 992px){
     .timeline-content h3 {
         font-size: 14px;
