@@ -57,7 +57,7 @@
 }
 .bg .graffiti svg:nth-child(2){
     fill: #484848;
-    width: 400px;
+    width: 350px;
     left: -100px;
     top: -120px;
 }
@@ -66,6 +66,24 @@
     width: 300px;
     right: 100px;
     top: -100px;
+}
+@media (max-width: 768px){
+    .bg .graffiti svg:nth-child(3){
+        width: 220px;
+        right: 41px;
+        top: -69px;
+    }
+}
+@media (max-width: 576px){
+    .bg .graffiti svg:nth-child(2){
+        width: 308px;
+        left: -124px;
+    }
+    .bg .graffiti svg:nth-child(3){
+        width: 127px;
+        right: -31px;
+        top: -43px;
+    }
 }
 .bg .graffiti svg:nth-child(4){
     width: 100px;
@@ -196,6 +214,7 @@
 .header .logo{
     float: left;
     line-height: 70px;
+    margin-left: 20px;
 }
 .header .logo i{
     font-size: 35px;
@@ -209,9 +228,18 @@
     padding-left: 55px;   
     display: inline-block;
 }
+@media (max-width: 450px){
+    .header .logo{
+        margin-left: 0;
+    }
+    .header .logo p{
+        font-size: 15px;
+    }
+}
 /* menu */
 .header .menu{
     float: right;
+    margin-right: 50px;
 }
 .header .menu > li{
     float: left;
@@ -268,12 +296,17 @@
     position: fixed;
     top: 0;
     right: -30%;
-    width: 30%;
+    width: 400px;
     height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
     z-index: 10;
+}
+@media (max-width: 768px){
+    .popup-menu{
+        width: 300px;
+    }
 }
 #popup-menu:target{
     opacity: 1;
@@ -309,12 +342,23 @@
     height: 500px;
 }
 .hero .img__device{
-    width: 60%;
+    width: 650px;
     padding-top: 30px;
 }
-@media (max-width: 992px){
+@media (max-width: 768px){
+    .hero h1{
+        font-size: 45px;
+    }
     .hero .img__device{
         width: 100%;
+    }
+}
+@media (max-width: 450px){
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero h4, .hero h5{
+        font-size: 18px;
     }
 }
 .hero .row{
@@ -516,6 +560,26 @@
     border: #FFF solid 4px;
     border-radius: 18px;
 }
+@media (max-width: 1200px){
+    .experience .imgBox>img:nth-child(3){
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .experience .imgBox>img:nth-child(2){
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .experience .imgBox>img:nth-child(2){
+        display: inline-block;
+    }
+}
+@media (max-width: 450px){
+    .experience .imgBox>img:nth-child(2){
+        display: none;
+    }
+}
     /* 背景圖案 */
 .experience .item-wrappe{
     position: absolute;
@@ -604,6 +668,11 @@
     background: #FAF1DD;
     z-index: 1
 }
+@media (max-width: 768px){
+    .experience .line:before {
+        left: 2%;
+    }
+}
 .timeline-block {
     width: -webkit-calc(50% + 8px);
     width: -moz-calc(50% + 8px);
@@ -654,6 +723,30 @@
 .timeline-content span {
     font-size: 18px;
 }
+@media (max-width: 992px){
+    .timeline-content h3 {
+        font-size: 14px;
+    }
+    .timeline-content span {
+        font-size: 17px;
+    }
+}
+@media (max-width: 768px){
+    .timeline-content h3 {
+        font-size: 23px;
+    }
+    .timeline-content span {
+        font-size: 18px;
+    }
+}
+@media (max-width: 450px){
+    .timeline-content h3 {
+        font-size: 14px;
+    }
+    .timeline-content span {
+        font-size: 13px;
+    }
+}
 .timeline-content p, .accordion-panel p {
     font-size: 14px;
     font-weight: 500;
@@ -701,6 +794,17 @@
 .unfold-left > span{
     left: -10px;
 }
+@media (max-width: 768px){
+    .unfold-left{
+        left: auto;
+        right: 0;
+    }
+    .unfold-left > span{
+        left: auto;
+        right: 0;
+    }
+    
+}
 .unfold > svg{
     fill: #484848;
     top: 6px;
@@ -723,9 +827,15 @@
 .works .container{
     padding-top: 100px;
 }
+@media (max-width: 450px){
+    .works .container > h5{
+        font-size: 18px;
+    }
+}
 #filter{
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 #posts .post{
     background-color: aquamarine;
@@ -764,7 +874,8 @@
 	margin: 0;
     padding: 0;
     border-radius: 30px;
-	overflow: hidden;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 #posts figure img{
     object-fit: cover;
